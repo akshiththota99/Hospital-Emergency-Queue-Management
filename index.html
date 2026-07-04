@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Emergency Queue Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🏥 Hospital Emergency Queue Management</h1>
+
+        <form id="patientForm">
+            <input type="text" id="name" placeholder="Patient Name" required>
+
+            <select id="priority">
+                <option value="4">Critical</option>
+                <option value="3">High</option>
+                <option value="2">Medium</option>
+                <option value="1">Low</option>
+            </select>
+
+            <button type="submit">Add Patient</button>
+        </form>
+
+        <h2>Emergency Queue</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Position</th>
+                    <th>Name</th>
+                    <th>Priority</th>
+                </tr>
+            </thead>
+            <tbody id="queueBody"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
